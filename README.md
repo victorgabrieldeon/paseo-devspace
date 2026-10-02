@@ -9,10 +9,10 @@ Plugin do [Paseo](https://paseo.sh) para iniciar, parar e acompanhar sessões [D
 ## Instalação
 
 ```bash
-npm install
-npm run typecheck
-paseo plugin install /caminho/para/paseo-devspace
+paseo plugin install github:victorgabrieldeon/paseo-devspace
 ```
+
+Para atualizar depois: `paseo plugin update devspace-manager`.
 
 Requer o `devspace` no PATH do daemon e plugins habilitados (Settings → Plugins).
 
