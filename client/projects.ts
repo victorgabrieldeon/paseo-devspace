@@ -1,9 +1,10 @@
-import type { PaseoWorkspace } from "@getpaseo/client";
-
-export type ProjectWorkspace = Pick<
-  PaseoWorkspace,
-  "projectId" | "projectDisplayName" | "projectCustomName" | "projectRootPath"
->;
+/** The workspace fields this plugin reads, declared locally so Git installs need no @getpaseo/client types. */
+export type ProjectWorkspace = {
+  readonly projectId: string;
+  readonly projectDisplayName: string;
+  readonly projectCustomName?: string | null | undefined;
+  readonly projectRootPath: string;
+};
 
 export type ProjectSummary = {
   readonly id: string;
